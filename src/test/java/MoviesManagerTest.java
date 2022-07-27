@@ -1,4 +1,5 @@
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 
 public class MoviesManagerTest {
@@ -7,8 +8,8 @@ public class MoviesManagerTest {
 
     public void testAll() {
 
-        MoviesManager manager =  new MoviesManager();
-        manager.add ("Бладшот");
+        MoviesManager manager = new MoviesManager();
+        manager.add("Бладшот");
         manager.add("Вперёд");
         manager.add("Отель Белград");
         manager.add("Джентельиены");
@@ -27,8 +28,8 @@ public class MoviesManagerTest {
 
     public void testLast() {
 
-        MoviesManager manager =  new MoviesManager();
-        manager.add ("Бладшот");
+        MoviesManager manager = new MoviesManager();
+        manager.add("Бладшот");
         manager.add("Вперёд");
         manager.add("Отель Белград");
         manager.add("Джентельиены");
@@ -42,12 +43,13 @@ public class MoviesManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
 
     public void testLast2() {
 
-        MoviesManager manager =  new MoviesManager(15);
-        manager.add ("Бладшот");
+        MoviesManager manager = new MoviesManager(15);
+        manager.add("Бладшот");
         manager.add("Вперёд");
         manager.add("Отель Белград");
         manager.add("Джентельиены");
@@ -66,8 +68,8 @@ public class MoviesManagerTest {
 
     public void testLast3() {
 
-        MoviesManager manager =  new MoviesManager(5);
-        manager.add ("Бладшот");
+        MoviesManager manager = new MoviesManager(5);
+        manager.add("Бладшот");
         manager.add("Вперёд");
         manager.add("Отель Белград");
         manager.add("Джентельиены");
